@@ -3,6 +3,16 @@
 Dieses Repository enthält Materialien zur Vorlesung _Programmierung I_
 im Kurs WWI25AMA an der DHBW Mannheim.
 
+## Lern-Ressourcen
+
+Die folgenden Links bieten gute Einstiegs- und Nachschlage-Ressourcen für die Programmiersprache Go:
+
+- [Go by Example](https://gobyexample.com) - Eine Sammlung von kleinen, gut erklärten Code-Beispielen zu vielen Themen.
+- [A Tour of Go](https://tour.golang.org) - Ein interaktives Tutorial zu den wichtigsten Go-Konzepten.
+- [Exercism](https://exercism.org) - Eine Sammlung von Programmieraufgaben mit automatischer Überprüfung.
+- [CodinGame](https://www.codingame.com) - Eine Sammlung von Programmieraufgaben in Form von Spielen.
+- [Project Euler](https://projecteuler.net) - Eine Sammlung von mathematisch orientierten Programmieraufgaben.
+
 ## Software
 
 In der Vorlesung wird die Programmiersprache [Go](https://go.dev) verwendet.
