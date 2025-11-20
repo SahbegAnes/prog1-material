@@ -1,4 +1,4 @@
-package maumau
+package card
 
 import "fmt"
 
@@ -26,7 +26,7 @@ func ExampleCard_Picture() {
 	// ┌─────────┐
 	// │K        │
 	// │         │
-	// │    H    │
+	// │    ♥    │
 	// │         │
 	// │        K│
 	// └─────────┘
@@ -34,7 +34,7 @@ func ExampleCard_Picture() {
 	// ┌─────────┐
 	// │7        │
 	// │         │
-	// │    D    │
+	// │    ♦    │
 	// │         │
 	// │        7│
 	// └─────────┘
@@ -42,7 +42,7 @@ func ExampleCard_Picture() {
 	// ┌─────────┐
 	// │10       │
 	// │         │
-	// │    C    │
+	// │    ♣    │
 	// │         │
 	// │       10│
 	// └─────────┘

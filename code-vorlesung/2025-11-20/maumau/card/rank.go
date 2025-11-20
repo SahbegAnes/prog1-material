@@ -1,4 +1,4 @@
-package maumau
+package card
 
 type Rank int
 
@@ -17,21 +17,21 @@ const (
 func (r Rank) String() string {
 	switch r {
 	case Seven:
-		return "Seven"
+		return "7"
 	case Eight:
-		return "Eight"
+		return "8"
 	case Nine:
-		return "Nine"
+		return "9"
 	case Ten:
-		return "Ten"
+		return "10"
 	case Jack:
-		return "Jack"
+		return "J"
 	case Queen:
-		return "Queen"
+		return "Q"
 	case King:
-		return "King"
+		return "K"
 	case Ace:
-		return "Ace"
+		return "A"
 	default:
 		return "Unknown Rank"
 	}

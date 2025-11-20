@@ -1,6 +1,9 @@
-package maumau
+package card
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Card repräsentiert eine Spielkarte mit einem Rang und einer Farbe.
 type Card struct {
@@ -23,6 +26,14 @@ func (c Card) String() string {
 
 // Picture gibt eine ASCII-Art-Darstellung der Karte zurück.
 func (c Card) Picture() string {
-	return fmt.Sprintf("┌─────────┐\n│%2s       │\n│         │\n│    %s    │\n│         │\n│       %2s│\n└─────────┘",
-		c.Rank.String()[:2], c.Suit.String()[:1], c.Rank.String()[:2])
+	lines := []string{
+		"┌─────────┐",
+		fmt.Sprintf("│%-2s       │", c.Rank.String()),
+		"│         │",
+		fmt.Sprintf("│    %s    │", c.Suit.Symbol()),
+		"│         │",
+		fmt.Sprintf("│       %2s│", c.Rank.String()),
+		"└─────────┘",
+	}
+	return strings.Join(lines, "\n")
 }
