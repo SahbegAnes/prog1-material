@@ -1,6 +1,7 @@
 package deck
 
 import (
+	"fmt"
 	"math/rand"
 	"prog1-material/code-vorlesung/2025-11-20/maumau/card"
 )
@@ -27,3 +28,22 @@ func (d *Deck) Shuffle() {
 		d.Cards[i], d.Cards[j] = d.Cards[j], d.Cards[i]
 	})
 }
+
+// Draw entfernt die oberste Karte vom Deck und gibt sie zurück.
+func (d *Deck) Draw() (card.Card, error) {
+	if len(d.Cards) == 0 {
+		return card.Card{}, fmt.Errorf("kein Karte im Deck")
+	}
+	last := len(d.Cards) - 1
+	topCard := d.Cards[last]
+	d.Cards = d.Cards[:last]
+	return topCard, nil
+}
+
+// Add fügt eine Karte oben zum Deck hinzu.
+func (d *Deck) Add(card card.Card) {
+	d.Cards = append(d.Cards, card)
+}
+
+// Top liefert die oberste Karte, ohne sie zu entfernen.
+// TODO
