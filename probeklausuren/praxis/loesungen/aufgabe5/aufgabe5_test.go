@@ -15,8 +15,10 @@ func ExampleCard_GreaterThan() {
 	fmt.Println(c3.GreaterThan(c2))
 
 	// Output:
-	// 4
-	// 4
-	// 3
-	// 0
+	// false
+	// true
+	// false
+	// false
+	// false
+	// false
 }
