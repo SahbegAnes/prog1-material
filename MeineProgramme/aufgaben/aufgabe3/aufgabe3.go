@@ -11,7 +11,7 @@ func CountSquares(list []int) int {
 	if len(list) == 0 {
 		return 0
 	}
-	for i := 0; i < list[0]; i++ {
+	for i := 0; i*i <= list[0]; i++ {
 		if i*i == list[0] {
 			return 1 + CountSquares(list[1:])
 		}
